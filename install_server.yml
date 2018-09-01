@@ -1,0 +1,11 @@
+---
+- name: New server setup
+  hosts: [webservers]
+  tasks:
+  - name: Installing httpd package on webservers
+    yum:
+      name: "{{ webpack }}"
+    vars:
+      webpack:
+      - httpd
+      - httpd-tools
