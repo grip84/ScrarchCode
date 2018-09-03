@@ -24,10 +24,10 @@ for each (var virtualMachinePropertiesEntity in virtualMachinePropertiesEntities
 
 //Workflow Inputs
 var vmName = machine.get("name");
+var networkAddress = vmProperties.get("VirtualMachine.Network0.Address");
 
 // Logs
 System.log("\n" + "Start Payload WF Input Logs");
-System.log("blueprintName is " + blueprintName);
-System.log("vmName is currently " + vmName);
-System.log("componentId is " + componentId);
+System.log("vmName " + "  =>  " + vmName);
+System.log("networkAddress " + "  =>  " + networkAddress);
 System.log("\n");
