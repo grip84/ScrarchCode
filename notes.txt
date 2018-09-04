@@ -1,0 +1,3 @@
+Format for property event subscriptions
+data~machine~properties~gov.in.iot.PP_Proxy
+
